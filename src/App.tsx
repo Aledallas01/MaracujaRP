@@ -34,7 +34,7 @@ function App() {
       }
     } catch (error) {
       console.error('Error fetching sections:', error);
-      setError('Errore nel caricamento delle sezioni. Verifica che il server sia avviato.');
+      setError('Errore nel caricamento delle sezioni. Verifica la connessione a Supabase.');
     } finally {
       setLoading(false);
     }

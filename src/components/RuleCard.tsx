@@ -26,11 +26,11 @@ const RuleCard: React.FC<RuleCardProps> = ({ rule, index, searchTerm }) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-teal-800/40 to-emerald-800/40 backdrop-blur-sm rounded-xl border border-teal-400/30 p-6 hover:border-orange-400/50 transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/20">
+    <div className="bg-gradient-to-r from-teal-800/40 to-emerald-800/40 backdrop-blur-sm rounded-xl border border-teal-400/30 p-6 hover:border-orange-400/50 transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/20 group">
       <div className="flex items-start space-x-4">
         {index && (
           <div className="flex-shrink-0">
-            <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg flex items-center justify-center shadow-lg">
+            <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
               <span className="text-white text-sm font-bold">{index}</span>
             </div>
           </div>
@@ -40,9 +40,14 @@ const RuleCard: React.FC<RuleCardProps> = ({ rule, index, searchTerm }) => {
           <h3 className="text-lg font-semibold text-white mb-3">
             {highlightText(rule.title, searchTerm || '')}
           </h3>
-          <p className="text-teal-100 leading-relaxed">
-            {highlightText(rule.content, searchTerm || '')}
-          </p>
+          <div 
+            className="text-teal-100 leading-relaxed prose prose-invert prose-sm max-w-none"
+            dangerouslySetInnerHTML={{ 
+              __html: searchTerm 
+                ? highlightText(rule.content, searchTerm).toString()
+                : rule.content 
+            }}
+          />
         </div>
       </div>
     </div>

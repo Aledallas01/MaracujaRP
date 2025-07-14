@@ -27,11 +27,11 @@ const MainContent: React.FC<MainContentProps> = ({ sections, activeSection, sear
               Nessun risultato trovato
             </h3>
             <p className="text-teal-200 text-lg mb-6">
-              Prova a modificare i termini di ricerca o sfoglia le categorie tropicali.
+              Prova a modificare i termini di ricerca o configura Supabase per aggiungere regole personalizzate.
             </p>
             <div className="flex items-center justify-center space-x-2 text-amber-300">
               <Palmtree className="h-5 w-5" />
-              <span className="text-sm">Esplora il paradiso delle regole</span>
+              <span className="text-sm">Clicca "Connect to Supabase" per iniziare</span>
               <Palmtree className="h-5 w-5" />
             </div>
           </div>
