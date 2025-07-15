@@ -49,7 +49,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex items-center justify-between p-6 border-b border-teal-400/30 md:hidden bg-gradient-to-r from-orange-500/20 to-amber-500/20">
           <div className="flex items-center space-x-3">
             <Palmtree className="h-6 w-6 text-orange-300" />
-            <h2 className="text-lg font-bold text-orange-200">Sezioni Tropicali</h2>
+            <h2 className="text-lg font-bold text-orange-200">Categorie</h2>
           </div>
           <button
             onClick={() => setIsOpen(false)}
@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <nav className="p-6 space-y-3 overflow-y-auto">
           <div className="text-xs font-bold text-orange-300 uppercase tracking-wider mb-6 flex items-center space-x-2">
             <Palmtree className="h-4 w-4" />
-            <span>Categorie Paradiso</span>
+            <span>Categorie</span>
           </div>
           
           {sections.map((section, index) => {
