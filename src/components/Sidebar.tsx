@@ -121,20 +121,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           })}
         </nav>
 
-        {/* Bottom info */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-teal-400/30 bg-gradient-to-r from-emerald-800/80 to-teal-800/80 backdrop-blur-sm">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-2">
-              <Palmtree className="h-4 w-4 text-amber-300" />
-              <span className="text-xs text-orange-200 font-medium">Ultimo aggiornamento</span>
-            </div>
-            <p className="text-orange-100 font-bold text-sm">15 Gennaio 2025</p>
-            <div className="mt-2 flex items-center justify-center space-x-1">
-              <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-xs text-green-300">Sempre aggiornato</span>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );

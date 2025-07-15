@@ -100,14 +100,14 @@ const MainContent: React.FC<MainContentProps> = ({ sections, activeSection, sear
 
   return (
     <main className="flex-1 md:ml-64 p-6 pt-24">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="mb-10 bg-gradient-to-r from-orange-500/20 to-amber-500/20 backdrop-blur-sm rounded-3xl p-8 border border-orange-400/30 shadow-xl">
           <div className="flex items-center space-x-4 mb-4">
             <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
               <Palmtree className="h-7 w-7 text-white" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-white mb-2">
+              <h2 className="text-5xl font-bold text-white mb-2 text-center">
                 {currentSection.title}
               </h2>
               <div className="flex items-center space-x-3">
@@ -121,7 +121,7 @@ const MainContent: React.FC<MainContentProps> = ({ sections, activeSection, sear
           </div>
         </div>
 
-        <div className="grid gap-8">
+        <div className="grid gap-8 max-w-4xl mx-auto">
           {currentSection.rules.map((rule, index) => (
             <RuleCard 
               key={rule.id} 
@@ -145,16 +145,15 @@ const MainContent: React.FC<MainContentProps> = ({ sections, activeSection, sear
               Se hai dubbi o necessiti di chiarimenti sul regolamento tropicale, il nostro team è sempre pronto ad aiutarti! 🌺
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-orange-500/30 backdrop-blur-sm border border-orange-400/50 rounded-2xl px-6 py-3 hover:bg-orange-500/40 transition-all cursor-pointer">
-              <span className="text-orange-200 font-medium">💬 Discord: #supporto</span>
-            </div>
-            <div className="bg-amber-500/30 backdrop-blur-sm border border-amber-400/50 rounded-2xl px-6 py-3 hover:bg-amber-500/40 transition-all cursor-pointer">
-              <span className="text-amber-200 font-medium">🎫 Ticket System</span>
-            </div>
-            <div className="bg-teal-500/30 backdrop-blur-sm border border-teal-400/50 rounded-2xl px-6 py-3 hover:bg-teal-500/40 transition-all cursor-pointer">
-              <span className="text-teal-200 font-medium">🏝️ Forum Comunità</span>
-            </div>
+          <div className="flex justify-center">
+            <a 
+              href="https://discord.com/channels/1258732999214632982/1333937942141337721"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-indigo-500/30 to-purple-500/30 backdrop-blur-sm border border-indigo-400/50 rounded-2xl px-8 py-4 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all cursor-pointer shadow-lg hover:shadow-xl"
+            >
+              <span className="text-indigo-200 font-medium text-lg">💬 Discord Supporto</span>
+            </a>
           </div>
         </div>
       </div>

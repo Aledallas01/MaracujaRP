@@ -1,5 +1,5 @@
 import React from 'react';
-import { Palmtree, Heart, Users, MessageCircle } from 'lucide-react';
+import { Palmtree, MessageCircle, Youtube, Music } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
-          <div>
+          <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="bg-gradient-to-r from-orange-500 to-amber-500 p-2 rounded-lg shadow-lg">
                 <Palmtree className="h-6 w-6 text-white" />
@@ -28,58 +28,27 @@ const Footer: React.FC = () => {
 
           {/* Links */}
           <div>
-            <h3 className="text-orange-200 font-semibold mb-4">Collegamenti Utili</h3>
+            <h3 className="text-orange-200 font-semibold mb-4 text-center md:text-left">Collegamenti Utili</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center">
+                <a href="https://discord.gg/maracuja" target="_blank" rel="noopener noreferrer" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center justify-center md:justify-start">
                   <MessageCircle className="h-4 w-4 mr-2" />
-                  Discord Server
+                  Discord
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center">
-                  <Users className="h-4 w-4 mr-2" />
-                  Forum Comunità
+                <a href="https://youtube.com/@maracujaroleplay" target="_blank" rel="noopener noreferrer" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center justify-center md:justify-start">
+                  <Youtube className="h-4 w-4 mr-2" />
+                  YouTube
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center">
-                  <Palmtree className="h-4 w-4 mr-2" />
-                  Whitelist
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center">
-                  <Heart className="h-4 w-4 mr-2" />
-                  Donazioni
+                <a href="https://tiktok.com/@maracujaroleplay" target="_blank" rel="noopener noreferrer" className="text-teal-200 hover:text-orange-300 transition-colors flex items-center justify-center md:justify-start">
+                  <Music className="h-4 w-4 mr-2" />
+                  TikTok
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Stats */}
-          <div>
-            <h3 className="text-orange-200 font-semibold mb-4">Statistiche Server</h3>
-            <div className="space-y-3">
-              <div className="bg-gradient-to-r from-teal-700/50 to-emerald-700/50 rounded-lg p-3 border border-teal-400/20">
-                <div className="flex justify-between items-center">
-                  <span className="text-teal-200">Giocatori Online</span>
-                  <span className="text-green-300 font-bold">127/200</span>
-                </div>
-              </div>
-              <div className="bg-gradient-to-r from-teal-700/50 to-emerald-700/50 rounded-lg p-3 border border-teal-400/20">
-                <div className="flex justify-between items-center">
-                  <span className="text-teal-200">Membri Registrati</span>
-                  <span className="text-orange-300 font-bold">2,847</span>
-                </div>
-              </div>
-              <div className="bg-gradient-to-r from-teal-700/50 to-emerald-700/50 rounded-lg p-3 border border-teal-400/20">
-                <div className="flex justify-between items-center">
-                  <span className="text-teal-200">Uptime Server</span>
-                  <span className="text-amber-300 font-bold">99.8%</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -89,7 +58,7 @@ const Footer: React.FC = () => {
               © 2025 Maracuja Roleplay. Tutti i diritti riservati.
             </p>
             <p className="text-teal-300 text-sm mt-2 md:mt-0">
-              Versione regolamento: 2.1.0 • Ultimo aggiornamento: 15 Gen 2025
+              Versione regolamento: 2.1.0
             </p>
           </div>
         </div>
