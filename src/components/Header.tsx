@@ -98,10 +98,6 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, setSearchTerm, setSidebarOp
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                 <div className="absolute inset-0 w-3 h-3 bg-green-400 rounded-full animate-ping opacity-75"></div>
               </div>
-              <span className="text-sm text-green-200 font-medium">Server Online</span>
-              <div className="text-xs text-green-300 bg-green-500/20 px-2 py-1 rounded-full">
-                127/200
-              </div>
             </div>
             
             {onAdminClick && (
