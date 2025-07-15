@@ -94,8 +94,8 @@ const MainContent: React.FC<MainContentProps> = ({ sections, activeSection, sear
   }
 
   return (
-    <main className="flex-1 md:ml-64 p-6 pt-24">
-      <div className="max-w-6xl mx-auto">
+    <main className="flex-1 md:ml-64 p-6 pt-24 flex justify-center">
+      <div className="w-full max-w-4xl">
         <div className="mb-10 bg-gradient-to-r from-orange-500/20 to-amber-500/20 backdrop-blur-sm rounded-3xl p-8 border border-orange-400/30 shadow-xl">
           <div className="flex items-center space-x-4 mb-4">
             <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
@@ -116,7 +116,7 @@ const MainContent: React.FC<MainContentProps> = ({ sections, activeSection, sear
           </div>
         </div>
 
-        <div className="grid gap-8 max-w-4xl mx-auto">
+        <div className="grid gap-8">
           {currentSection.rules.map((rule, index) => (
             <RuleCard 
               key={rule.id} 

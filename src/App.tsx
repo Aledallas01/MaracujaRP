@@ -49,11 +49,11 @@ function App() {
   })).filter(section => section.rules.length > 0 || searchTerm === '');
 
   const handleLogin = (username: string, password: string): boolean => {
-    // Simulazione login - in produzione usare autenticazione reale
-    if (username === 'admin' && password === 'maracuja2025') {
+    // Login con credenziali Developer nascoste
+    if (username === 'Developer' && password === 'Developer123') {
       const admin: AdminUser = {
         id: '1',
-        username: 'admin',
+        username: 'Developer',
         role: 'super_admin',
         lastLogin: new Date()
       };

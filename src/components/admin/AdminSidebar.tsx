@@ -27,7 +27,7 @@ const AdminSidebar: React.FC<AdminSidebarProps> = ({
   const navigationItems = [
     { id: 'stats', label: 'Dashboard', icon: BarChart3, description: 'Panoramica generale' },
     { id: 'rules', label: 'Gestione Regole', icon: FileText, description: 'Crea e modifica regole' },
-    { id: 'users', label: 'Utenti', icon: UserCheck, description: 'Gestione membri' },
+    { id: 'account', label: 'Account', icon: UserCheck, description: 'Gestione account' },
     { id: 'logs', label: 'Log Attività', icon: Activity, description: 'Cronologia azioni' },
     { id: 'backup', label: 'Backup', icon: Database, description: 'Salvataggio dati' },
     { id: 'settings', label: 'Impostazioni', icon: Settings, description: 'Configurazione sistema' },

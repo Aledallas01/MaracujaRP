@@ -116,8 +116,8 @@ const LoginModal: React.FC<LoginModalProps> = ({ onLogin, onClose }) => {
           <div className="bg-teal-700/30 rounded-lg p-3 border border-teal-400/20">
             <p className="text-xs text-teal-200 mb-1">Credenziali demo:</p>
             <p className="text-xs text-teal-100">Username: <span className="font-mono">admin</span></p>
-            <p className="text-xs text-teal-100">Password: <span className="font-mono">maracuja2025</span></p>
-          </div>
+          <p className="text-xs text-teal-100">Username: <span className="font-mono">Developer</span></p>
+          <p className="text-xs text-teal-100">Password: <span className="font-mono">Developer123</span></p>
         </div>
       </div>
     </div>

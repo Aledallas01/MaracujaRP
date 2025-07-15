@@ -41,12 +41,12 @@ const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Sidebar */}
       <div className={`
-        fixed md:sticky top-20 left-0 h-[calc(100vh-5rem)] w-64 bg-gradient-to-b from-teal-800/90 via-emerald-800/90 to-teal-900/90 backdrop-blur-xl border-r border-teal-400/40 z-40 shadow-2xl shadow-teal-500/20
+        fixed left-0 top-0 h-screen w-64 bg-gradient-to-b from-teal-800/90 via-emerald-800/90 to-teal-900/90 backdrop-blur-xl border-r border-teal-400/40 z-40 shadow-2xl shadow-teal-500/20
         transform transition-all duration-300 ease-in-out
         ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
       `}>
         {/* Mobile header */}
-        <div className="flex items-center justify-between p-6 border-b border-teal-400/30 md:hidden bg-gradient-to-r from-orange-500/20 to-amber-500/20">
+        <div className="flex items-center justify-between p-6 border-b border-teal-400/30 md:hidden bg-gradient-to-r from-orange-500/20 to-amber-500/20 mt-20">
           <div className="flex items-center space-x-3">
             <Palmtree className="h-6 w-6 text-orange-300" />
             <h2 className="text-lg font-bold text-orange-200">Categorie</h2>
@@ -59,7 +59,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           </button>
         </div>
 
-        <nav className="p-6 space-y-3 overflow-y-auto">
+        <nav className="p-6 space-y-3 overflow-y-auto mt-20 md:mt-0">
           <div className="text-xs font-bold text-orange-300 uppercase tracking-wider mb-6 flex items-center space-x-2">
             <Palmtree className="h-4 w-4" />
             <span>Categorie</span>
@@ -81,7 +81,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   }
                 `}
               >
-                <div className="flex items-center p-4 text-left relative z-10">
+                <div className="flex items-center p-4 text-left relative z-10 min-h-[4rem]">
                   <div className={`
                     p-2 rounded-xl mr-4 transition-all duration-200
                     ${isActive 
@@ -91,7 +91,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   `}>
                     <IconComponent className={`h-5 w-5 ${isActive ? 'text-white' : 'text-teal-200 group-hover:text-white'}`} />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0 mr-3">
                     <span className={`font-semibold block ${isActive ? 'text-white' : 'text-teal-100 group-hover:text-white'}`}>
                       {section.title}
                     </span>
@@ -99,7 +99,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                       {section.rules.length} regole
                     </span>
                   </div>
-                  <div className={`
+                  <div className={`flex-shrink-0
                     px-3 py-1 rounded-full text-xs font-bold transition-all
                     ${isActive 
                       ? 'bg-orange-500/40 text-orange-100 border border-orange-400/50' 

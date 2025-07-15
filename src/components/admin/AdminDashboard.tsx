@@ -25,7 +25,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({
   onLogout,
   onRefresh
 }) => {
-  const [activeView, setActiveView] = useState<'stats' | 'rules' | 'users' | 'settings' | 'logs' | 'backup'>('stats');
+  const [activeView, setActiveView] = useState<'stats' | 'rules' | 'account' | 'settings' | 'logs' | 'backup'>('stats');
   const [selectedSection, setSelectedSection] = useState<string>(sections.length > 0 ? sections[0].id : '');
 
   const addRule = async (sectionId: string, rule: Omit<Rule, 'id'>) => {
@@ -109,8 +109,8 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({
             onMoveRule={moveRule}
           />
         );
-      case 'users':
-        return <UserManagement />;
+      case 'account':
+        return <AccountManagement currentAdmin={currentAdmin} onLogout={onLogout} />;
       case 'settings':
         return <SystemSettings />;
       case 'logs':
