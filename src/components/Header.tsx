@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, setSearchTerm, setSidebarOp
                 </h1>
                 <div className="flex items-center space-x-2">
                   <Waves className="h-3 w-3 text-teal-300" />
-                  <p className="text-sm text-orange-200/80">Regolamento Tropicale</p>
+                  <p className="text-sm text-orange-200/80">Regolamento del Server</p>
                   <Sun className="h-3 w-3 text-amber-300 animate-pulse" />
                 </div>
               </div>
