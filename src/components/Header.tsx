@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ searchTerm, setSearchTerm, setSidebarOp
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="block w-full pl-12 pr-4 py-3 border border-orange-400/40 rounded-2xl bg-emerald-800/60 backdrop-blur-sm text-white placeholder-orange-200/70 focus:outline-none focus:ring-2 focus:ring-orange-400/60 focus:border-orange-300 transition-all duration-200 hover:bg-emerald-800/70"
-                placeholder="🔍 Cerca nelle regole tropicali..."
+                placeholder="🔍 Cerca nelle regole..."
               />
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500/10 to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
             </div>
