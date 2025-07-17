@@ -4,13 +4,13 @@ export const placeholderSections: RuleSection[] = [
   {
     id: 'placeholder-general',
     title: 'Regolamento Generale',
-    description: 'Regole base della comunità tropicale',
+    description: 'Regole base della comunità',
     icon: 'Shield',
     orderIndex: 1,
     rules: [
       {
         id: 'placeholder-rule-1',
-        title: 'Benvenuto nel Paradiso Tropicale! 🏝️',
+        title: 'Benvenuto in MaracujaRP! 🏝️',
         content: `
           <h3>🌴 Benvenuto su Maracuja Roleplay!</h3>
           <p>Questa è una <strong>regola di esempio</strong> per mostrarti come funziona la piattaforma.</p>
