@@ -10,7 +10,7 @@ export const placeholderSections: RuleSection[] = [
     rules: [
       {
         id: 'placeholder-rule-1',
-        title: 'Benvenuto in MaracujaRP! 🏝️',
+        title: 'Benvenuto in MaracujaRP!',
         content: `
           <h3>🌴 Benvenuto su Maracuja Roleplay!</h3>
           <p>Questa è una <strong>regola di esempio</strong> per mostrarti come funziona la piattaforma.</p>
