@@ -1,8 +1,8 @@
 import React from "react";
-import { Palmtree, MessageCircle, Youtube, Music } from "lucide-react";
+import { Palmtree, MessageCircle, Music, MessageSquare } from "lucide-react";
 
-const youtubeLink = import.meta.env.VITE_LINK_YOUTUBE;
 const discordLink = import.meta.env.VITE_LINK_DISCORD;
+const telegramLink = import.meta.env.VITE_LINK_TELEGRAM;
 const tiktokLink = import.meta.env.VITE_LINK_TIKTOK;
 const versione = import.meta.env.VITE_VERSION_REGOLAMENTO;
 
@@ -46,13 +46,13 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href={youtubeLink}
+                  href={telegramLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-200 hover:text-orange-300 transition-colors flex items-center justify-center md:justify-start"
                 >
-                  <Youtube className="h-4 w-4 mr-2" />
-                  YouTube
+                  <MessageSquare className="h-4 w-4 mr-2" />
+                  Telegram
                 </a>
               </li>
               <li>
